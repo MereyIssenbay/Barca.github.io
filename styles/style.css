@@ -125,3 +125,7 @@ img {
     object-fit: cover;
     height: 700px;
 }
+
+.collapse {
+    transition: height 0.3s ease-in-out;
+}
