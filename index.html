@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="barca.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <title>FC Barcelona</title>
+</head>
+<body>
+    <header calss = "main-header" id = "main-header">
+        <h1><strong>Football club Barcelona</strong></h1>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#history"><img src="img/barca.png" alt="FC Barcelona Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="History.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <main class="container">
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/team.webp" class="d-block w-100" alt="team">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third form</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/gavi.webp" class="d-block w-100" alt="Gavi">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Classical jersey</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Lew.webp" class="d-block w-100" alt="Lewa and Gondugan">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Guest form</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <br>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white image-card">
+                        <img src="img/Lewa.webp" class="card-img" alt="Lewandowski">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Travel looks</h5>
+                            <p class="card-text">It's time for adventures</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white image-card">
+                        <img src="img/Best_Sellers_Fleece1.webp" class="card-img" alt="Best sellers">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Best sellers</h5>
+                            <p class="card-text">Your favorites</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white image-card">
+                        <img src="img/atributics.webp" class="card-img" alt="atributics">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Atributics</h5>
+                            <p class="card-text">Anything that you can imagine with Barca</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <br>
+            <h2>Why us?</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1. Quality of products
+                            </button>
+                        </h2>
+                    </div>
+        
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            We take immense pride in offering top-notch Barça merchandise that is made to last. From jerseys to scarves and everything in between, our products are crafted with precision and attention to detail, ensuring that you get the best quality to showcase your love for the club.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. Fast delivery
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            We know that you can't wait to get your hands on your favorite Barça gear. That's why we've streamlined our delivery process to ensure your orders reach you swiftly. No more anxiously waiting weeks for your package – we're committed to getting it to your doorstep in no time.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3. Low prices
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Being a student and a football lover ourselves, we understand the importance of affordability. Our commitment to providing Barça attributes at budget-friendly prices sets us apart. You don't have to break the bank to support your favorite team in style.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+    </main>
+    <footer class="main-footer"></footer>
+        <hr>
+        <section id = "contact">
+            <h1>Contact Us</h1>
+            <form method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" aria-describedby="emailHelp" id="email" name="email" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <br>
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </section>
+        <script src="js/validation.js"></script>
+    
+        <p>&copy; 2023 Football club Barcelona</p>
+    </footer>
+</body>
+</html>

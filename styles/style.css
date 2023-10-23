@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee7cf;
+}
+
+#main-header{
+    padding: 10px;
+}
+
+.main-header {
+    font-style: normal;
+    text-decoration: solid;
+}
+
+header > h1 {
+    padding-left: 10px;
+    border-left: 3px solid #EDBB00;
+}
+
+.squad{
+    color:black;
+}
+
+.squad li::before{
+    content: '⚽';
+}
+
+.squad > ul{
+    list-style: none;
+    padding-left: 15px;
+}
+
+nav ol li {
+    display: inline;
+    margin-right: 100px;
+    position: relative;
+}
+
+nav ol {
+    list-style:none;
+    background-color: darkblue;
+    padding: 10px;
+    text-align: center;
+    top: 30px;
+}
+
+nav a:hover{
+    color: yellowgreen;
+}
+
+nav a{
+    color: darkred;
+}
+
+#squad a:hover{
+    color: darkred;
+}
+
+.container{
+    width: 100%;
+    overflow: hidden;
+}
+
+#history img {
+    float: left; 
+    margin-right: 20px; 
+}
+
+#history p {
+    clear: right; 
+}
+
+#stadium img {
+    float: right; 
+    margin-right: 20px; 
+}
+
+#stadium p {
+    clear: left; 
+}
+
+#main-header ~ .main-footer{
+    padding: 10px;
+    margin-top: 10px;
+    display: inline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 70px;
+}
+
+td{
+    text-align: center;
+}
+
+strong{
+    color: #EDBB00;
+}
+
+input[type="submit"] {
+    background-color: darkblue; 
+    color: #fff; 
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+img {
+    display: block;
+    width: 50%;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+}
+
+.image-card img.card-img {
+    background-position: center; 
+    object-fit: cover;
+    height: 700px;
+}
