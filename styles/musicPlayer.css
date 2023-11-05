@@ -125,9 +125,7 @@
   transition: width 0.1s linear;
 }
 
-/* Add this CSS to your existing styles or in an external stylesheet */
 
-/* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .music-container {
       display: flex;
@@ -151,7 +149,6 @@
   }
 }
 
-/* Media query for screens between 600px and 1024px */
 @media (min-width: 601px) and (max-width: 1024px) {
   .music-container {
       padding: 10px;

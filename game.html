@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/game.css">
+  <title>Drag and Drop Game</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Drag and Drop Game</h2>
+    <p>Drag the images to arrange them in the correct order. You have one attempt to win a discount.</p>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="image-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="img/barca.png" draggable="true" ondragstart="drag(event)" id="img1">
+        </div>
+        <div class="image-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="img/jersey1.webp" draggable="true" ondragstart="drag(event)" id="img2">
+        </div>
+        <div class="image-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="img/jersey2.webp" draggable="true" ondragstart="drag(event)" id="img3">
+        </div>
+        <div class="image-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="img/jersey3.webp" draggable="true" ondragstart="drag(event)" id="img4">
+        </div>
+      </div>
+    
+      <div class="col-md-6">
+        <div class="image-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="image-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="image-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="image-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary" id="checkButton" onclick="checkWin()">Check</button>
+    
+    <span id="winMessage"></span>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>

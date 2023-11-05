@@ -1,0 +1,12 @@
+.image-container {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    margin: 10px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
