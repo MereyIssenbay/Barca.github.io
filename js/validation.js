@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
             errorElement.style.display = 'none';
         });
 
+        //Email regex
         const email = form.querySelector('#email');
         const emailError = form.querySelector('#emailError');
         const emailValue = email.value.trim();
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        //If invalid
         if (!emailPattern.test(emailValue)) {
             emailError.style.display = 'block';
             emailError.textContent = 'Valid email is required';
@@ -22,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const male = form.querySelector('#male');
         const female = form.querySelector('#female');
         const genderError = form.querySelector('#genderError');
+        //If invalid
         if (!male.checked && !female.checked) {
             genderError.style.display = 'block';
             genderError.textContent = 'Gender selection is required';

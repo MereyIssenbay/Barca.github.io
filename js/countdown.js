@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     const timer = document.getElementById('timer');
-
+    //Giving the date for countdown
     const targetDate = new Date('2023-11-24 23:59:59').getTime();
 
     startCountdown(targetDate);
 
+    //Countdown start function
     function startCountdown(targetDate) {
         updateTimer();
 
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 clearInterval(intervalId);
                 timer.textContent = '00:00:00:00';
             } else {
+                //Convertors to days month and etc.
                 const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));

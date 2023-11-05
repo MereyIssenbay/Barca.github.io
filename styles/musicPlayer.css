@@ -124,3 +124,36 @@
   width: 0%;
   transition: width 0.1s linear;
 }
+
+/* Add this CSS to your existing styles or in an external stylesheet */
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .music-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navigation {
+      display: flex;
+      justify-content: center;
+  }
+
+  #prev,
+  #play,
+  #next {
+      font-size: 24px;
+  }
+
+  #cover {
+      width: 80%;
+      margin: 0 auto;
+  }
+}
+
+/* Media query for screens between 600px and 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .music-container {
+      padding: 10px;
+  }
+}
