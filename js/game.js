@@ -1,38 +1,37 @@
-var attempts = 1;
+const draggableItems = document.querySelectorAll('.draggable');
+        const dropTargets = document.querySelectorAll('.droptarget');
+        const resultSpan = document.getElementById('resultSpan');
 
-function allowDrop(ev) {
-  ev.preventDefault();
-}
+        let correctItems = ["Barcelona", "1899", "Camp Nou"];
+        let userItems = [];
 
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
+        draggableItems.forEach(item => {
+            item.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text', e.target.id);
+            });
+        });
 
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  var target = ev.target;
+        dropTargets.forEach(target => {
+            target.addEventListener('dragover', (e) => {
+                e.preventDefault();
+            });
 
-  if (target.classList.contains("image-container")) {
-    target.appendChild(document.getElementById(data));
-    attempts--;
-  }
-}
+            target.addEventListener('drop', (e) => {
+                e.preventDefault();
+                const data = e.dataTransfer.getData('text');
+                const draggableItem = document.getElementById(data);
 
-function checkWin() {
-  var imageContainers = document.querySelectorAll('.image-container');
-  var win = true;
-  
-  for (var i = 0; i < imageContainers.length; i++) {
-    if (!imageContainers[i].contains(document.getElementById('img' + (i + 1)))) {
-      win = false;
-      break;
-    }
-  }
+                if (target.childNodes.length === 0) {
+                    target.appendChild(draggableItem);
+                    userItems.push(draggableItem.textContent);
+                }
+            });
+        });
 
-  if (win && attempts === 0) {
-    document.getElementById("winMessage").innerText = "Congratulations! You won a discount!";
-  } else {
-    document.getElementById("winMessage").innerText = "Sorry, you did not win this time.";
-  }
-}
+        function checkResult() {
+            if (JSON.stringify(userItems) === JSON.stringify(correctItems)) {
+                resultSpan.textContent = "Correct! You placed the items in the right order.";
+            } else {
+                resultSpan.textContent = "Incorrect. Try again.";
+            }
+        }
